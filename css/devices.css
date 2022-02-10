@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #134e5e, #71b280);
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: white;
+    font-size: 3vmax;
+}
+
+.class_table{
+    margin: 10px 70px 0px;
+    box-shadow: 0px 35px 50px black;
+}
+
+.table_design{
+    border-radius: 5px;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: whitesmoke;
+}
+
+.table_design td, th{
+    text-align: center;
+    padding: 8px;
+}
+
+.table_design td{
+    border-right: 1px solid black;
+}
+
+.table_design thead th{
+    color: whitesmoke;
+    background: blue;
+}
+
+.table_design thead th:nth-child(odd){
+    color: whitesmoke;
+    background: #134e5e;
+}
+
+.table_design thead th:nth-child(even){
+    background: blue;
+}
+
+
+@media (max-width:767px){
+    .table_design{
+        display: block;
+        width: 100%;
+    }
+    .class_table::before{
+        content: "Scroll Right ->";
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        color: whitesmoke;
+        padding: 0 0 10px;
+    }
+    .table_design thead,tbody,thead th{
+        display: block;
+    }
+    .table_design thead th:last-child{
+        border-bottom: none;
+    }
+    .table_design thead{
+        float: left;
+    }
+    .table_design tbody{
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .table_design td,th{
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    .table_design thead th{
+       text-align: left;
+       border-bottom: 1px solid black;
+    }
+
+    .table_design tbody tr{
+        display: table-cell;
+    }
+
+    .table_design tbody tr:nth-child(odd){
+        background: none;
+    }
+
+    .table_design tbody tr:nth-child(even){
+        background: transparent;
+    }
+
+    .table_design tr td:nth-child(odd){
+        background: whitesmoke;
+        border-right: 1px solid black;
+    }
+
+    .table_design tr td:nth-child(even){
+        border-right: 1px solid black;
+    }
+
+    .table_design tbody td{
+       display: block;
+       text-align: center;
+    }
+
+}

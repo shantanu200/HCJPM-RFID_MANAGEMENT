@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header button{
+    border: 1px solid #71b280;
+    padding: 12px 45px;
+    font-size: 1.2vmax;
+    padding: 0px 40px;
+    color: whitesmoke;
+    background: #71b280;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.header h1{
+    font-size: 3vmax;
+    color: whitesmoke;
+}
+
+.tb_wrap{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.tb_des {
+    border-radius: 5px;
+    font-size: 1.2vmax;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.tb_des td, .tb_des th {
+    text-align: center;
+    padding: 8px;
+}
+
+.tb_des td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 1vmax;
+}
+
+.tb_des thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.tb_des thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.tb_des tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .header h1{
+        font-size: 5vmax;
+    }
+    .header button{
+        font-size: 2vmax;
+    }
+    .tb_des {
+        display: block;
+        width: 100%;
+    }
+
+    .tb_wrap{
+        margin: 10px;
+    }
+
+
+    .tb_wrap:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+        
+    }
+    .tb_des thead, .tb_des tbody, .tb_des thead th {
+        display: block;
+    }
+    .tb_des thead th:last-child{
+        border-bottom: none;
+    }
+    .tb_des thead {
+        float: left;
+    }
+    .tb_des tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .tb_des td, .tb_des th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .tb_des thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .tb_des tbody tr {
+        display: table-cell;
+    }
+    .tb_des tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .tb_des tr:nth-child(even) {
+        background: transparent;
+    }
+    .tb_des tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .tb_des tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .tb_des tbody td {
+        display: block;
+        text-align: center;
+    }
+}

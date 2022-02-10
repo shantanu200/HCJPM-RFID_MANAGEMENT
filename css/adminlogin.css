@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 60vh;
+    width: 50%;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+}
+
+.sign_up{
+    width: 100%;
+    display: flex;
+}
+
+.signup_left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    /* font-family: 'napo',sans-serif; */
+    font-size: 3vmax;
+    margin-bottom: 20px;
+}
+
+a{
+    margin-top: 15px;
+    text-decoration: none;
+    /* font-family: 'napo',sans-serif; */
+    color: black;
+    transition: transform 2s ease-in-out;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    text-align: center;
+    background-color: "#eee";
+    /* border: none; */
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+form button{
+    border-radius: 20px;
+    border: 1px solid #0083b0;
+    background:  linear-gradient(to right, #56ccf2, #2f80ed);
+    color: white;
+    font-weight: bold;
+    font-size: 2vmin;
+    padding: 12px 45px;
+    margin-top: 20px ;
+    /* font-family: 'napo',sans-serif; */
+    letter-spacing: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+.signup_right{
+    width: 50%;
+    border-radius: 0 30px 30px 0;
+    background: #0f3443;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sign_in{
+    width: 100%;
+    display: none;
+}
+
+.signin_left{
+    width: 50%;
+    border-radius: 30px 0 0 30px;
+    background: #0f3443;
+    display: flex;
+    justify-content: center;
+}
+
+
+.signin_right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile_view{
+    height: 40vh;
+    width: 100%;
+    background: #0f3443;
+    display: none;
+    
+}
+.mobile_view h1{
+    color: whitesmoke;
+}
+
+p{
+    color: whitesmoke;
+    width: 60%;
+    text-align: center;
+    /* font-family: 'Napo',sans-serif; */
+    font-size: 2vmax;
+}
+
+@media only screen and (max-width:1200px) and (min-width:851px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:850px){
+    body{
+        background: white;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    .sign_up{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .signup_left{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .signup_right{
+        display: none;
+    }
+    h1{
+       font-size: 5vmax;
+
+    }
+    
+    form{
+        align-items: center;
+    }
+
+    form input{
+        width: 130%;
+    }
+
+    form button{
+        font-size: bold;
+    }
+
+    .signin_left{
+        display: none;
+    }
+
+    .sign_in{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .signin_right{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .mobile_view{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
