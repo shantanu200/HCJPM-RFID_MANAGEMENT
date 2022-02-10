@@ -83,7 +83,15 @@ body{
     background: #F8F8F8;
 }
 
-/* Responsive */
+.add_user{
+    height: 50vh;
+    width: 50%;
+    background: whitesmoke;
+    display: block;
+    text-align: center;
+    
+}
+
 
 @media (max-width: 767px) {
     .header h1{
