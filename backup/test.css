@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.bg_modal{
+    background-color: #ac414100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_user{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 60vh;
+    width: 40%;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.add_user .head{
+    height: 20vh;
+    width: 100%;
+    background: #0f3443;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.add_form{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    text-align: center;
+    background-color: "#eee";
+    padding: 12px 60px;
+    margin: 8px 0;
+}
+
+form button{
+    border-radius: 20px;
+    border: 1px solid #71b280;
+    background: #71b280;
+    font-weight: bold;
+    font-size: 2vmin;
+    padding: 12px 45px;
+    margin-top: 20px ;
+    /* font-family: 'napo',sans-serif; */
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width:767px){
+    
+    .add_user{
+        width: 90%;
+    }
+    
+    .add_user h2{
+        font-size: 5vmax;
+    }
+
+    form button{
+        font-size: 3vmin;
+    }
+
+}
